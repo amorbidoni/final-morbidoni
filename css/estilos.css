@@ -639,6 +639,11 @@ header h2 {
     padding: 0 !important;
   }
 }
+@media all and (min-width: 1200px) {
+  .suscriptores {
+    height: 200px !important;
+  }
+}
 .miCol-1 {
   width: 8.3333333333%;
 }
