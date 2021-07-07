@@ -1,0 +1,108 @@
+ <div class="titulo flexContainer-row">
+        <hr />
+        <p>suscribirse</p>
+        <hr />
+      </div>
+      <div class="suscriptores__container flexContainer-row">
+        <div class="form__container">
+          <form action="">
+            <div class="form__data">
+              <label for="">Nombre:</label>
+              <input type="name" />
+            </div>
+            <div class="form__data">
+              <label for="">Apellido:</label>
+              <input type="name" />
+            </div>
+            <div class="form__data">
+              <label for="">Fecha de nacimiento:</label>
+              <input type="date" placeholder="dd/mm/aaa" />
+            </div>
+            <div class="form__data margin-t">
+              <label for="">teléfono:</label>
+              <input type="phone" placeholder="351X XXXXXX" />
+            </div>
+          </form>
+
+          <div class="checkbox__container">
+            <div class="campo__form">
+              <p>preferencias:</p>
+              <p>
+                <label class="check-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                  Vino tinto
+                </label>
+              </p>
+            </div>
+
+            <div class="campo__form">
+              <p>
+                <label class="check-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                  Vino blanco
+                </label>
+              </p>
+            </div>
+            <div class="campo__form">
+              <p>
+                <label class="check-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                  espumantes
+                </label>
+              </p>
+            </div>
+            <div class="campo__form">
+              <p>
+                <label class="check-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                  destilados
+                </label>
+              </p>
+            </div>
+          </div>
+          <div class="form__container form__container--otros">
+            <label for="">Otros</label>
+            <textarea name="otros" id="" cols="30" rows="10"></textarea>
+          </div>
+          <div class="form__container flexContainer-column">
+            <button class="btn-grande"><p>suscribirse</p></button>
+          </div>
+        </div>
+        <!--close form__container-->
+        <div class="publicidad__container">
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../assets/imagenes/eventos5.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/imagenes/eventos4.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="..."
+                  class="d-block w-100"
+                  alt="../assets/imagenes/eventos6.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>

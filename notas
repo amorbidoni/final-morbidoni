@@ -1,0 +1,35 @@
+titulos
+
+<div class="titulo flexContainer-row">
+    <hr />
+    <p>PROMOCIONES</p>
+    <hr />
+</div>
+
+productos-pack
+
+ <div class="flexContainer-row productos-pack">
+    <img src="" alt="pack de seis vinos" />
+</div>
+
+Vinos
+
+<div class="vino__box flexContainer-column">
+    <div class="vino__box__img"></div>
+    <div class="vino__box__data flexContainer-column">
+    <p class="vino__box__data--nombre"></p>
+    <p class="vino__box__data--precio"></p>
+    <div class="container__btn--chico">
+        <button>Comprar</button>
+    </div>
+    </div>
+</div>
+
+  <div class="lineaformu">
+      <div class="container-campo">
+        <label for=""></label>
+        <div class="elementoFormu">
+          <input type="text">
+        </div><!--close elementoFormu-->
+      </div><!--close container-campo-->
+    </div><!--close lineaformu-->

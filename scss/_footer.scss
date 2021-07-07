@@ -1,0 +1,91 @@
+@import "variables";
+footer {
+  background-color: rgb(228, 227, 227);
+  padding-top: 20px;
+  div {
+    margin: 0 10px;
+  }
+}
+@each $name-color, $bgcolor in $icon-color {
+  .icon--#{$name-color} {
+    fill: $bgcolor;
+  }
+}
+.container__icon {
+  justify-content: space-around;
+  margin: 20px;
+  width: 300px;
+  margin: 20px auto;
+
+  svg {
+    width: $icon-w-m;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+.icon--whatsapp--fixed {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  cursor: pointer;
+  svg {
+    width: $icon-w-l;
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}
+.icon--flechita {
+  justify-content: center;
+  width: $icon-w-xl;
+  height: $icon-w-xl;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  &:hover {
+    transform: scale(1.3);
+    border-radius: 100px;
+    box-shadow: 2px 2px 10px #666;
+  }
+  svg {
+    width: $icon-w-l;
+  }
+}
+.contacto {
+  font-family: $fuente;
+  color: $light;
+  font-weight: $fuente-semiBold;
+  padding-bottom: 20px;
+  a {
+    text-decoration: none;
+    font-style: $fuente-italic;
+    color: $light;
+    &:hover {
+      text-decoration: none;
+      color: $light;
+    }
+  }
+}
+@media all and (min-width: 768px) {
+  .container__icon {
+    width: 400px;
+    svg {
+      width: $icon-w-l;
+    }
+  }
+}
+@media all and (min-width: 1100px) {
+  .container__icon {
+    width: 700px;
+    svg {
+      width: $icon-w-xl;
+    }
+  }
+}

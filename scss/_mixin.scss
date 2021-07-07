@@ -1,0 +1,39 @@
+@import "variables";
+
+// BUTTON
+
+@mixin btn($witth, $height) {
+  width: $witth;
+  height: $height;
+  background-color: $btn-color;
+  color: $secundario;
+  font-family: $fuente;
+  font-weight: $fuente-semiBold;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0 15px 0;
+
+  transition: 0.5s;
+  box-shadow: 2px 2px 5px #666;
+  &:hover {
+    background-color: $btn-color-h;
+    box-shadow: 4px 4px 10px rgb(117, 117, 117);
+    p {
+      transform: translate(-1px);
+    }
+  }
+  p {
+    transition: 0.5s;
+  }
+}
+
+.btn-grande {
+  @include btn($btn-w-l, $btn-h-l);
+  p {
+    padding: 7px;
+    text-transform: uppercase;
+  }
+}
+.btn-chico {
+  @include btn($btn-w-m, $btn-h-m);
+}

@@ -1,0 +1,97 @@
+@import "variables";
+
+.hidden {
+  display: none !important;
+}
+
+.myModal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px #666;
+  z-index: 10;
+  padding: 10px;
+  font-family: $fuente;
+
+  .close--modal {
+    align-self: flex-end;
+    border: none;
+    background-color: white;
+    svg {
+      fill: black;
+      width: 25px;
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+  h2 {
+    text-align: center;
+  }
+  img {
+    width: 120px;
+    margin: 20px;
+  }
+  table {
+    text-align: justify;
+    tr {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    td {
+      width: 200px;
+      margin-top: 10px;
+    }
+    .table--data {
+      text-align: end;
+      margin-right: 10px;
+
+      width: 120px !important;
+    }
+  }
+  .comprar__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    height: 100%;
+    input {
+      width: 50px;
+      margin-bottom: 30px;
+    }
+    button {
+      justify-self: flex-end;
+    }
+    .btn--agregar {
+      svg {
+        fill: white;
+        width: 20px;
+      }
+    }
+    .precio--unitario {
+      font-size: 1rem;
+      color: rgb(88, 88, 88);
+    }
+    .descuento {
+      color: rgb(132, 170, 106);
+    }
+  }
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}

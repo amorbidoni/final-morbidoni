@@ -1,0 +1,50 @@
+.productos {
+  flex-wrap: wrap !important;
+  justify-content: space-around;
+}
+.producto__box {
+  align-items: center;
+  width: 160px;
+  height: 350px;
+  border: 1px solid #666;
+  margin: 10px;
+}
+.producto__box__data {
+  font-family: $fuente;
+  text-align: center;
+  p {
+    margin: 0;
+  }
+}
+.producto__box__data--nombre {
+  text-transform: uppercase;
+  max-width: 170px;
+  height: 40px;
+  font-size: 0.75rem;
+  padding: 0 3px;
+}
+.producto__box__data--precio {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.producto__box__img {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  background-image: url(../assets/fondos/rombo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5px;
+  img {
+    width: 60px;
+    transition: 1s;
+    cursor: pointer;
+    border-bottom: 1px solid #666;
+    padding-bottom: 2px;
+    &:hover {
+      width: 65px;
+    }
+  }
+}

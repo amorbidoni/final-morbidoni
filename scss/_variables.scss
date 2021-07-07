@@ -1,0 +1,55 @@
+$primario: #000;
+$secundario: #fff;
+$light: #666;
+
+$fondo: #000;
+$texto: #000;
+$texto-secundario: #fff;
+$fuente: "Playfair Display", serif;
+$fuente-regular: 400;
+$fuente-medium: 500;
+$fuente-semiBold: 600;
+$fuente-bold: 700;
+$fuente-italic: italic;
+// display
+$display-mob: none;
+$display-tab: none;
+// bordes
+$border-light: 1px solid #666;
+
+// BUTTON
+$btn-color: rgb(37, 37, 37);
+$btn-color-h: rgb(0, 0, 0);
+$btn-w-l: 150px;
+$btn-w-m: 80px;
+$btn-h-l: 40px;
+$btn-h-m: 30px;
+
+//iconos
+
+$icon-w-m: 25px;
+$icon-w-l: 35px;
+$icon-w-xl: 45px;
+$icon-color: (
+  facebook: #4867aa,
+  instagram: #9b1004,
+  whatsapp: #4ac658,
+  carrito: rgb(212, 211, 211),
+  flechita: #3a0161,
+);
+
+// promociones
+
+$img-w-m: 200px;
+$img-w-l: 250px;
+$img-w-xl: 300px;
+
+// COLUMNAAS
+
+$ancho: 100%;
+
+@for $i from 1 to 13 {
+  .miCol-#{$i} {
+    width: ($ancho/12) * $i;
+  }
+}

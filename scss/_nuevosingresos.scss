@@ -1,0 +1,35 @@
+@import "variables";
+
+.nuevosIngresos__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+  background: radial-gradient(
+    circle,
+    rgba(128, 0, 187, 1) 0%,
+    rgba(0, 0, 0, 1) 49%
+  );
+  img {
+    width: 100px;
+    animation: fadeInRight;
+    animation-duration: 3s;
+  }
+  .ingresosDescript {
+    color: $secundario;
+    width: 80%;
+    text-align: center;
+    font-size: 0.75rem;
+    margin-top: 30px;
+    animation: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in;
+    .nombreIngreso {
+      font-weight: 700;
+      font-size: 1.3em;
+    }
+  }
+}
