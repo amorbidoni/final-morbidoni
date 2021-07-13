@@ -67,12 +67,10 @@ btnCalcular.addEventListener("click", function () {
   }
 });
 
-// <!-- <script type="text/javascript">
-// /*javascript para el efecto de scroll en la barra de navegación*/
-// window.addEventListener("scroll", function () {
-//   var nav = document.querySelector("nav");
-//   nav.classList.toggle("sticky", window.scrollY > 0);
-//   var logo = document.querySelector(".nav__logo");
-//   logo.classList.toggle("logo-pequeño", window.scrollY > 0);
-// });
-// </script> -->
+// filtro vinos
+
+let todos = document.querySelectorAll(".todos");
+let malbec = document.querySelectorAll(".malbec");
+let cabernetSauvignon = document.querySelectorAll(".cabernet-sauvignon");
+let blend = document.querySelectorAll(".blend");
+let otros = document.querySelectorAll(".otros");

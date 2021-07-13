@@ -33,3 +33,13 @@ Vinos
         </div><!--close elementoFormu-->
       </div><!--close container-campo-->
     </div><!--close lineaformu-->
+
+    <div class="container__select--filtro">
+        <select name="filtro" id="">
+          <option value="">Todos</option>
+          <option value="">Tintos</option>
+          <option value="">Malbec</option>
+          <option value="">Cabernet Sauvignon</option>
+          <option value="">Blancos y Rosados</option>
+        </select>
+      </div>

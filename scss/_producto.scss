@@ -48,3 +48,43 @@
     }
   }
 }
+
+// filtro productos
+
+.container__select--filtro {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 30px;
+  select {
+    background-color: black;
+    color: white;
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: 2px 2px 10px #c9c9c9 !important;
+    height: 30px;
+    cursor: pointer;
+  }
+}
+
+// aside
+.aside-vinos {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-right: 1px solid black;
+  margin: 30px;
+  font-weight: $fuente-bold;
+  cursor: pointer;
+  p {
+    color: $btn-color;
+    transition: 0.3s;
+    &:hover {
+      transform: translate(-2px);
+      color: black;
+      border-bottom: 2px solid black;
+    }
+  }
+}
