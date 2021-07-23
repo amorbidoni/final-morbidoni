@@ -1,14 +1,10 @@
 @import "variables";
 
-.hidden {
-  display: none !important;
-}
-
 .myModal {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 80%;
+  position: fixed;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
@@ -86,7 +82,7 @@
   }
 }
 .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

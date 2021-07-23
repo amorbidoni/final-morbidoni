@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 .miCol-1 {
   width: 8.3333333333%;
 }
@@ -344,16 +345,151 @@ header h2 {
   font-weight: 700;
   cursor: pointer;
 }
-.aside-vinos p {
+.aside-vinos button {
+  border: none;
+  background-color: white;
   color: #252525;
   transition: 0.3s;
+  font-family: "Playfair Display", serif;
+  margin: 5px 5px 5px 0px;
 }
-.aside-vinos p:hover {
+.aside-vinos button:hover {
   transform: translate(-2px);
   color: black;
-  border-bottom: 2px solid black;
+}
+.aside-vinos button.active-item {
+  text-decoration: underline;
+  text-decoration-color: black;
+  text-decoration-thickness: 2px;
 }
 
+.container__banner--vinos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.container__banner--vinos img {
+  width: 300px;
+  height: 300px;
+}
+.container__banner--vinos p {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  border-bottom: 1px solid #666;
+  border-top: 1px solid #666;
+  padding: 20px 0;
+}
+
+.container__cayado--animado {
+  position: relative;
+}
+.container__cayado--animado .bigote {
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  left: 80px;
+  top: 183px;
+  animation-name: bigoteAnimacion;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0s;
+}
+.container__cayado--animado .bigote:hover {
+  transform: translate(10px);
+}
+.container__cayado--animado .cejas {
+  position: absolute;
+  width: 87px;
+  height: 20px;
+  left: 45px;
+  top: 130px;
+  animation-name: cejasAnimation;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+.container__banner--destilados {
+  display: flex;
+  flex-direction: row;
+  background: black;
+  background: linear-gradient(137deg, black 29%, #3d0075 100%);
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+.container__banner--destilados .container__receta {
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.container__banner--destilados .container__receta .ul-uno {
+  margin: 0 20px;
+  animation: bounceInDown;
+  animation-duration: 2s;
+}
+.container__banner--destilados .container__receta .ul-dos {
+  margin: 0 20px;
+  padding-bottom: 20px;
+  animation: bounceInDown;
+  animation-duration: 2s;
+}
+.container__banner--destilados .container__receta .ul-dos li {
+  width: 400px;
+}
+.container__banner--destilados .img-negroni {
+  position: relative;
+}
+.container__banner--destilados .img-negroni img {
+  width: 200px;
+  height: 280px;
+  margin-left: 200px;
+  margin-right: 100px;
+  animation-name: backInLeft;
+  animation-duration: 2s;
+}
+.container__banner--destilados .img-negroni p {
+  position: absolute;
+  left: 250px;
+  bottom: 5px;
+  font-size: 1.5rem;
+}
+
+@keyframes bigoteAnimacion {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes cejasAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}
 .miCol-1 {
   width: 8.3333333333%;
 }
@@ -965,15 +1101,11 @@ footer div {
   width: 100%;
 }
 
-.hidden {
-  display: none !important;
-}
-
 .myModal {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 80%;
+  position: fixed;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
@@ -1048,7 +1180,7 @@ footer div {
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -1106,6 +1238,10 @@ footer div {
   width: 100px;
   margin: 10px;
   margin-bottom: 20px;
+}
+
+.hidden {
+  display: none !important;
 }
 
 @media all and (min-width: 1100px) {

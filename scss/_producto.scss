@@ -78,13 +78,155 @@
   margin: 30px;
   font-weight: $fuente-bold;
   cursor: pointer;
-  p {
+  button {
+    border: none;
+    background-color: white;
     color: $btn-color;
     transition: 0.3s;
+    font-family: $fuente;
+    margin: 5px 5px 5px 0px;
     &:hover {
       transform: translate(-2px);
       color: black;
-      border-bottom: 2px solid black;
     }
+    &.active-item {
+      text-decoration: underline;
+      text-decoration-color: black;
+      text-decoration-thickness: 2px;
+    }
+  }
+}
+.container__banner--vinos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+
+  img {
+    width: 300px;
+    height: 300px;
+  }
+  p {
+    font-family: "Great Vibes", cursive;
+    font-size: 2rem;
+    border-bottom: 1px solid #666;
+    border-top: 1px solid #666;
+    padding: 20px 0;
+  }
+}
+.container__cayado--animado {
+  position: relative;
+
+  .bigote {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    left: 80px;
+    top: 183px;
+    animation-name: bigoteAnimacion;
+
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+
+    &:hover {
+      transform: translate(10px);
+    }
+  }
+  .cejas {
+    position: absolute;
+    width: 87px;
+    height: 20px;
+    left: 45px;
+    top: 130px;
+    animation-name: cejasAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-delay: 0s;
+  }
+}
+.container__banner--destilados {
+  display: flex;
+  flex-direction: row;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    137deg,
+    rgba(0, 0, 0, 1) 29%,
+    rgba(61, 0, 117, 1) 100%
+  );
+  color: white;
+  font-family: $fuente;
+  .container__receta {
+    align-items: flex-start;
+    margin-top: 20px;
+    .ul-uno {
+      margin: 0 20px;
+      animation: bounceInDown;
+      animation-duration: 2s;
+    }
+    .ul-dos {
+      margin: 0 20px;
+      padding-bottom: 20px;
+      animation: bounceInDown;
+      animation-duration: 2s;
+
+      li {
+        width: 400px;
+      }
+    }
+  }
+  .img-negroni {
+    position: relative;
+    img {
+      width: 200px;
+      height: 280px;
+      margin-left: 200px;
+      margin-right: 100px;
+      animation-name: backInLeft;
+      animation-duration: 2s;
+    }
+    p {
+      position: absolute;
+      left: 250px;
+      bottom: 5px;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@keyframes bigoteAnimacion {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes cejasAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(3px);
   }
 }

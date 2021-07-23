@@ -70,7 +70,57 @@ btnCalcular.addEventListener("click", function () {
 // filtro vinos
 
 let todos = document.querySelectorAll(".todos");
+
+let tintos = document.querySelectorAll(".tintos");
 let malbec = document.querySelectorAll(".malbec");
 let cabernetSauvignon = document.querySelectorAll(".cabernet-sauvignon");
+let cabernetFranc = document.querySelectorAll(".cabernet-franc");
+let blancosYRosados = document.querySelectorAll(".blancos-rosados");
 let blend = document.querySelectorAll(".blend");
 let otros = document.querySelectorAll(".otros");
+
+console.log(tintos.length);
+
+const btnTodos = document.getElementById("btn-filtro-todos");
+const btnTintos = document.getElementById("btn-filtro-tintos");
+const btnMalbec = document.getElementById("btn-filtro-malbec");
+const btnCabernetSauvignon = document.getElementById("btn-filtro-cs");
+const btnCabernetFranc = document.getElementById("btn-filtro-cf");
+const btnBlend = document.getElementById("btn-filtro-blend");
+const btnBlancosYRosados = document.getElementById("btn-filtro-byr");
+const btnOtros = document.getElementById("btn-filtro-otros");
+
+const btnsFiltro = [
+  btnTintos,
+  btnTodos,
+  btnMalbec,
+  btnCabernetSauvignon,
+  btnCabernetFranc,
+  btnBlancosYRosados,
+  btnBlend,
+  btnOtros,
+];
+
+const filtroVinos = function (btn, variedad) {
+  btn.addEventListener("click", function () {
+    for (let i = 0; i < btnsFiltro.length; i++) {
+      btnsFiltro[i].classList.remove("active-item");
+    }
+    for (let i = 0; i < todos.length; i++) {
+      todos[i].classList.add("hidden");
+    }
+    for (let i = 0; i < variedad.length; i++) {
+      variedad[i].classList.remove("hidden");
+    }
+    btn.classList.add("active-item");
+  });
+};
+
+filtroVinos(btnTodos, todos);
+filtroVinos(btnMalbec, malbec);
+filtroVinos(btnTintos, tintos);
+filtroVinos(btnCabernetFranc, cabernetFranc);
+filtroVinos(btnCabernetSauvignon, cabernetSauvignon);
+filtroVinos(btnBlancosYRosados, blancosYRosados);
+filtroVinos(btnBlend, blend);
+filtroVinos(btnOtros, otros);
