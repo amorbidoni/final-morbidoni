@@ -48,7 +48,10 @@
     }
   }
 }
-
+.main-vinos {
+  border-left: 1px solid #666;
+  margin-right: 45px;
+}
 // filtro productos
 
 .container__select--filtro {
@@ -74,7 +77,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  border-right: 1px solid black;
+
   margin: 30px;
   font-weight: $fuente-bold;
   cursor: pointer;
