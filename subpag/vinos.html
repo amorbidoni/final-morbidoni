@@ -105,6 +105,22 @@
         <p>VINOS</p>
         <hr />
       </div>
+      <div class="container__select--vinos-mb">
+        <select name="" id="select--vinos-mb">
+          <option id="select-todos" value="1">Todos</option>
+          <option id="select-tintos" value="2">Tintos</option>
+          <option id="select-malbec" value="3">Malbec</option>
+          <option id="select-cabernetSauvignon" value="4">
+            Cabernet Sauvignon
+          </option>
+          <option id="select-cabernetFranc" value="5">Cabernet Franc</option>
+          <option id="select-blend" value="6">Blend</option>
+          <option id="select-blancosYRosados" value="7">
+            Blancos y Rosados
+          </option>
+          <option id="select-otros" value="8">Otros</option>
+        </select>
+      </div>
       <div class="container-main-vinos flexContainer-row">
         <div class="aside-vinos miCol-2">
           <button id="btn-filtro-todos" class="active-item">TODOS</button>
@@ -115,6 +131,9 @@
           <button id="btn-filtro-blend">BLEND</button>
           <button id="btn-filtro-byr">BLANCOS Y ROSADOS</button>
           <button id="btn-filtro-otros">OTROS</button>
+          <div class="container__publi--aside">
+            <img src="../assets/imagenes/asideHeyMalbec.png" alt="" />
+          </div>
         </div>
         <div class="main-vinos miCol-10">
           <div class="flexContainer-column">
@@ -131,7 +150,9 @@
                 <div class="producto__box__data flexContainer-column">
                   <p class="producto__box__data--nombre">EL GAUCHO, MALBEC.</p>
                   <p class="producto__box__data--precio">$650</p>
-                  <button class="btn-chico show--modal"><p>Comprar</p></button>
+                  <button id="btn-0001" class="btn-chico show--modal">
+                    <p>Comprar</p>
+                  </button>
                 </div>
               </div>
               <div
@@ -356,27 +377,22 @@
             />
           </svg>
         </button>
-        <h2>El Gaucho, Malbec.</h2>
+        <div id="nombre-vino"></div>
         <div class="flexContainer-row">
-          <img src="../assets/vinos/elGauchoTrans.png" alt="" />
+          <div id="imagen-vino"></div>
           <table>
             <tbody>
               <tr>
                 <td class="table--data">Añada:</td>
-                <td>2018</td>
+                <td></td>
               </tr>
               <tr>
                 <td class="table--data">Varietal:</td>
-                <td>100% Malbec.</td>
+                <td></td>
               </tr>
               <tr>
                 <td class="table--data">Notas de Cata:</td>
-                <td>
-                  Color rojo con ribetes violaceos, de aroma intenso. Muy
-                  agradable al paladar donde se mezclan frutos rojos como los
-                  arándanos y cerezas con especias tales como el tabaco y
-                  chocolate. Redondo en boca y final agrabable.
-                </td>
+                <td></td>
               </tr>
             </tbody>
           </table>
@@ -502,5 +518,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="../javascript/script.js"></script>
+    <script src="../javascript/modalData.js"></script>
   </body>
 </html>

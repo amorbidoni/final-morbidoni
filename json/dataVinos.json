@@ -1,36 +1,37 @@
 [
   {
+    "id": "0001",
     "nombre": "El Gaucho, Malbec.",
     "añada": "2018",
-    "varietal":"100% Malbec",
-    "descripcion":"Color rojo con ribetes violaceos, de aroma intenso. Muy agradable al paladar donde se mezclan frutos rojos como los arándanos y cerezas con especias tales como el tabaco y chocolate. Redondo en boca y final agrabable.",
+    "varietal": "100% Malbec",
+    "descripcion": "Color rojo con ribetes violaceos, de aroma intenso. Muy agradable al paladar donde se mezclan frutos rojos como los arándanos y cerezas con especias tales como el tabaco y chocolate. Redondo en boca y final agrabable.",
     "precio": "$650",
     "imagen": "../assets/vinos/elGauchoTrans.png"
-  }
+  },
   {
     "nombre": "",
     "descripción": "",
     "precio": "",
     "imagen": ""
-  }
+  },
   {
     "nombre": "",
     "descripción": "",
     "precio": "",
     "imagen": ""
-  }
+  },
   {
     "nombre": "",
     "descripción": "",
     "precio": "",
     "imagen": ""
-  }
+  },
   {
     "nombre": "",
     "descripción": "",
     "precio": "",
     "imagen": ""
-  }
+  },
   {
     "nombre": "",
     "descripción": "",

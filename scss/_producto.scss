@@ -81,6 +81,9 @@
   margin: 30px;
   font-weight: $fuente-bold;
   cursor: pointer;
+  input[type="button"] {
+    outline: none;
+  }
   button {
     border: none;
     background-color: white;
@@ -88,6 +91,16 @@
     transition: 0.3s;
     font-family: $fuente;
     margin: 5px 5px 5px 0px;
+    outline: none;
+    min-width: 177px;
+    text-align: left;
+    &::-moz-focus-inner {
+      border: 0;
+    }
+    &:focus {
+      border: none;
+      outline: none;
+    }
     &:hover {
       transform: translate(-2px);
       color: black;
@@ -96,6 +109,11 @@
       text-decoration: underline;
       text-decoration-color: black;
       text-decoration-thickness: 2px;
+    }
+  }
+  .container__publi--aside {
+    img {
+      margin-top: 50px;
     }
   }
 }
@@ -180,6 +198,25 @@
       }
     }
   }
+  .img-manhattan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+      width: 200px;
+      height: 200px;
+      margin-left: 200px;
+      margin-right: 100px;
+      animation-name: backInLeft;
+      animation-duration: 2s;
+    }
+    p {
+      position: absolute;
+      left: 250px;
+      bottom: 5px;
+      font-size: 1.5rem;
+    }
+  }
   .img-negroni {
     position: relative;
     img {
@@ -196,6 +233,16 @@
       bottom: 5px;
       font-size: 1.5rem;
     }
+  }
+}
+.container__select--vinos-mb {
+  select {
+    background-color: white;
+    border: 1px solid black;
+    margin: 10px;
+    font-family: $fuente;
+    box-shadow: 2px 2px 5px #666;
+    cursor: pointer;
   }
 }
 
@@ -231,5 +278,30 @@
   }
   100% {
     transform: translateY(3px);
+  }
+}
+@media all and (max-width: 375px) {
+  .aside-vinos {
+    display: none;
+  }
+  .container__cayado--animado {
+    img {
+      display: none;
+    }
+  }
+  .container__banner--vinos {
+    width: 80% !important;
+    margin: 10px auto;
+    p {
+      font-size: 1.5rem !important;
+      padding: 10px 0;
+    }
+  }
+  .main-vinos {
+    border: none !important;
+    margin: 0 auto;
+  }
+  .productos {
+    width: 361px;
   }
 }

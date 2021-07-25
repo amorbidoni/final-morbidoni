@@ -124,3 +124,69 @@ filtroVinos(btnCabernetSauvignon, cabernetSauvignon);
 filtroVinos(btnBlancosYRosados, blancosYRosados);
 filtroVinos(btnBlend, blend);
 filtroVinos(btnOtros, otros);
+
+// filtro mobile
+
+const selectFiltroMb = document.getElementById("select--vinos-mb");
+const selectTodos = document.getElementById("select-todos");
+const selectTintos = document.getElementById("select-tintos");
+const selectMalbec = document.getElementById("select-malbec");
+const selectCabernetSauvignon = document.getElementById(
+  "select-cabernetSauvignon"
+);
+const selectCabernetFranc = document.getElementById("select-cabernetFranc");
+const selectBlend = document.getElementById("select-blend");
+const selectBlancosYRosados = document.getElementById("select-blancosYRosados");
+const selectOtros = document.getElementById("select-otros");
+
+const selectFiltroOptions = [
+  selectTodos,
+  selectTintos,
+  selectMalbec,
+  selectCabernetSauvignon,
+  selectCabernetFranc,
+  selectBlend,
+  selectBlancosYRosados,
+  selectOtros,
+];
+
+// selectFiltroMb.addEventListener("change", function () {
+//   for (let i = 0; i < todos.length; i++) {
+//     todos[i].classList.add("hidden");
+//   }
+//   if (selectFiltroMb.value === selectTodos.value) {
+//     for (let i = 0; i < todos.length; i++) {
+//       todos[i].classList.remove("hidden");
+//     }
+//   } else if (selectFiltroMb.value === selectMalbec.value) {
+//     for (let i = 0; i < malbec.length; i++) {
+//       malbec[i].classList.remove("hidden");
+//     }
+//   }
+// });
+
+const selectFiltroMobile = function (option, variedad) {
+  selectFiltroMb.addEventListener("change", function () {
+    if (selectFiltroMb.value == option.value) {
+      for (let i = 0; i < todos.length; i++) {
+        todos[i].classList.add("hidden");
+      }
+      for (let i = 0; i < variedad.length; i++) {
+        variedad[i].classList.remove("hidden");
+      }
+    }
+  });
+};
+
+selectFiltroMb.addEventListener("change", function () {
+  console.log(selectFiltroMb.value);
+});
+
+selectFiltroMobile(selectTodos, todos);
+selectFiltroMobile(selectTintos, tintos);
+selectFiltroMobile(selectMalbec, malbec);
+selectFiltroMobile(selectCabernetSauvignon, cabernetSauvignon);
+selectFiltroMobile(selectCabernetFranc, cabernetFranc);
+selectFiltroMobile(selectBlend, blend);
+selectFiltroMobile(selectBlancosYRosados, blancosYRosados);
+selectFiltroMobile(selectOtros, otros);

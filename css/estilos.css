@@ -349,6 +349,9 @@ header h2 {
   font-weight: 700;
   cursor: pointer;
 }
+.aside-vinos input[type=button] {
+  outline: none;
+}
 .aside-vinos button {
   border: none;
   background-color: white;
@@ -356,6 +359,16 @@ header h2 {
   transition: 0.3s;
   font-family: "Playfair Display", serif;
   margin: 5px 5px 5px 0px;
+  outline: none;
+  min-width: 177px;
+  text-align: left;
+}
+.aside-vinos button::-moz-focus-inner {
+  border: 0;
+}
+.aside-vinos button:focus {
+  border: none;
+  outline: none;
 }
 .aside-vinos button:hover {
   transform: translate(-2px);
@@ -365,6 +378,9 @@ header h2 {
   text-decoration: underline;
   text-decoration-color: black;
   text-decoration-thickness: 2px;
+}
+.aside-vinos .container__publi--aside img {
+  margin-top: 50px;
 }
 
 .container__banner--vinos {
@@ -442,6 +458,25 @@ header h2 {
 .container__banner--destilados .container__receta .ul-dos li {
   width: 400px;
 }
+.container__banner--destilados .img-manhattan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container__banner--destilados .img-manhattan img {
+  width: 200px;
+  height: 200px;
+  margin-left: 200px;
+  margin-right: 100px;
+  animation-name: backInLeft;
+  animation-duration: 2s;
+}
+.container__banner--destilados .img-manhattan p {
+  position: absolute;
+  left: 250px;
+  bottom: 5px;
+  font-size: 1.5rem;
+}
 .container__banner--destilados .img-negroni {
   position: relative;
 }
@@ -458,6 +493,15 @@ header h2 {
   left: 250px;
   bottom: 5px;
   font-size: 1.5rem;
+}
+
+.container__select--vinos-mb select {
+  background-color: white;
+  border: 1px solid black;
+  margin: 10px;
+  font-family: "Playfair Display", serif;
+  box-shadow: 2px 2px 5px #666;
+  cursor: pointer;
 }
 
 @keyframes bigoteAnimacion {
@@ -492,6 +536,33 @@ header h2 {
   }
   100% {
     transform: translateY(3px);
+  }
+}
+@media all and (max-width: 375px) {
+  .aside-vinos {
+    display: none;
+  }
+
+  .container__cayado--animado img {
+    display: none;
+  }
+
+  .container__banner--vinos {
+    width: 80% !important;
+    margin: 10px auto;
+  }
+  .container__banner--vinos p {
+    font-size: 1.5rem !important;
+    padding: 10px 0;
+  }
+
+  .main-vinos {
+    border: none !important;
+    margin: 0 auto;
+  }
+
+  .productos {
+    width: 361px;
   }
 }
 .miCol-1 {
