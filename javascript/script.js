@@ -79,8 +79,6 @@ let blancosYRosados = document.querySelectorAll(".blancos-rosados");
 let blend = document.querySelectorAll(".blend");
 let otros = document.querySelectorAll(".otros");
 
-console.log(tintos.length);
-
 const btnTodos = document.getElementById("btn-filtro-todos");
 const btnTintos = document.getElementById("btn-filtro-tintos");
 const btnMalbec = document.getElementById("btn-filtro-malbec");
@@ -150,21 +148,6 @@ const selectFiltroOptions = [
   selectOtros,
 ];
 
-// selectFiltroMb.addEventListener("change", function () {
-//   for (let i = 0; i < todos.length; i++) {
-//     todos[i].classList.add("hidden");
-//   }
-//   if (selectFiltroMb.value === selectTodos.value) {
-//     for (let i = 0; i < todos.length; i++) {
-//       todos[i].classList.remove("hidden");
-//     }
-//   } else if (selectFiltroMb.value === selectMalbec.value) {
-//     for (let i = 0; i < malbec.length; i++) {
-//       malbec[i].classList.remove("hidden");
-//     }
-//   }
-// });
-
 const selectFiltroMobile = function (option, variedad) {
   selectFiltroMb.addEventListener("change", function () {
     if (selectFiltroMb.value == option.value) {
@@ -190,3 +173,22 @@ selectFiltroMobile(selectCabernetFranc, cabernetFranc);
 selectFiltroMobile(selectBlend, blend);
 selectFiltroMobile(selectBlancosYRosados, blancosYRosados);
 selectFiltroMobile(selectOtros, otros);
+
+// btn agregar al carrito
+
+let btnAgregarAlCarrito = document.querySelectorAll(".btn--agregar");
+console.log(btnAgregarAlCarrito.length);
+const modalCarrito = document.querySelector(".container__modal--carrito");
+for (let i = 0; i < btnAgregarAlCarrito.length; i++) {
+  btnAgregarAlCarrito[i].addEventListener("click", function () {
+    closeModal();
+    modalCarrito.classList.remove("hidden");
+
+    setTimeout(function () {
+      modalCarrito.classList.add("hidden");
+    }, 3000);
+    setTimeout(function () {
+      modalCarrito.classList.add("animate__fadeOut");
+    }, 2000);
+  });
+}

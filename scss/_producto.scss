@@ -245,6 +245,33 @@
     cursor: pointer;
   }
 }
+.container__modal--carrito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 38%;
+  top: 50%;
+  width: 320px;
+  height: 100px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  box-shadow: 2px 2px 5px #666;
+  svg {
+    width: 20px;
+    fill: white;
+    animation: heartBeat;
+    animation-duration: 2s;
+  }
+  p {
+    font-family: $fuente;
+    color: white;
+    margin: 0 10px;
+  }
+}
 
 @keyframes bigoteAnimacion {
   0% {
