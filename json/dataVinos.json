@@ -9,7 +9,8 @@
     "imagen": "../assets/vinos/elGauchoTrans.png"
   },
   {
-    "nombre": "",
+    "id": "0002",
+    "nombre": "La Posta, Pinot Noir. ",
     "descripción": "",
     "precio": "",
     "imagen": ""

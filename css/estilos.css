@@ -388,7 +388,8 @@ header h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  padding: 20px;
+  max-width: 100%;
 }
 .container__banner--vinos img {
   width: 300px;
@@ -1016,7 +1017,7 @@ footer div {
 .icon--whatsapp--fixed {
   position: fixed;
   bottom: 50px;
-  right: 20px;
+  right: 40px;
   cursor: pointer;
 }
 .icon--whatsapp--fixed svg {

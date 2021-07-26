@@ -36,6 +36,10 @@ overlay.addEventListener("click", closeModal);
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && !myModal.classList.contains("hidden")) {
     closeModal();
+    let etiquetaNombre = document.getElementById("etiqueta-nombre");
+    let imagen = document.getElementById("img");
+    tituloVino.removeChild(etiquetaNombre);
+    imagenVino.removeChild(imagen);
   }
 });
 
@@ -190,5 +194,9 @@ for (let i = 0; i < btnAgregarAlCarrito.length; i++) {
     setTimeout(function () {
       modalCarrito.classList.add("animate__fadeOut");
     }, 2000);
+    let etiquetaNombre = document.getElementById("etiqueta-nombre");
+    let imagen = document.getElementById("img");
+    tituloVino.removeChild(etiquetaNombre);
+    imagenVino.removeChild(imagen);
   });
 }
