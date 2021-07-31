@@ -5,37 +5,231 @@
     "añada": "2018",
     "varietal": "100% Malbec",
     "descripcion": "Color rojo con ribetes violaceos, de aroma intenso. Muy agradable al paladar donde se mezclan frutos rojos como los arándanos y cerezas con especias tales como el tabaco y chocolate. Redondo en boca y final agrabable.",
-    "precio": "$650",
+    "precio": "650",
     "imagen": "../assets/vinos/elGauchoTrans.png"
   },
   {
     "id": "0002",
     "nombre": "La Posta, Pinot Noir. ",
-    "descripción": "",
+    "añada": "2017",
+    "varietal": "100% Pinot Noir",
+    "descripcion": "Pinot Noir que puede guardase 10 años sin problemas, conservar en un espacio fresco, sin luz y sin vibraciones, ideal para servir entre los 16 y 18 grados, Complementa muy bien los alimentos tradicionales Pinot-amigables como el cordero y salmón a la parrilla.",
+    "precio": "1320",
+    "imagen": "../assets/vinos/laPostaPinotTrans.png"
+  },
+  {
+    "id": "0003",
+    "nombre": "Alma Negra, Tinto",
+    "añada": "2016",
+    "varietal": "Blend",
+    "descripcion": "Maduración en barricas de 100% Roble Francés y 40% Roble Nuevo. <br> Alma Negra Blend Tinto es sin dudas un vino especial. La estética de su botella, la calidad de su composición y el misterio que envuelve su corte no divulgado, lo convierten en un vino fantástico para una cena especial y esperada.",
+    "precio": "1700",
+    "imagen": "../assets/vinos/almaNegraTrans.png"
+  },
+  {
+    "id": "0004",
+    "nombre": "Mosquita Muerta",
+    "añada": "2020",
+    "varietal": "70% Malbec, 20% Cabernet Sauvignon, 5% Merlot, 5% Cabernet Franc",
+    "descripcion": "El 60% del vino se cría durante 16 meses en barricas nuevas de roble francés. Este blend de tintas es de gran complejidad aromática, estructura y sucrosidad en boca. ",
+    "precio": "2500",
+    "imagen": "../assets/vinos/mosquitaMuertaTrans.png"
+  },
+  {
+    "id": "0005",
+    "nombre": "La Posta, Paulucci Malbec",
+    "añada": "2017",
+    "varietal": "100% Malbec.",
+    "descripcion": "30% del vino envejecido durante 12 meses en barricas de 2º uso (100% barricas francesas). Color rojo con aromas de cerezas, frambuesas y violetas junto con notas de roble tostado. En el paladar, los sabores de bayas frescas se mezclan con notas especiadas, hay un toque de caramelo suave en el acabado. Se trata de un vino cremoso, de cuerpo medio y bien estructurado. ",
+    "precio": "1320",
+    "imagen": "../assets/vinos/laPostaPaulucciTrans.png"
+  },
+  {
+    "id": "0006",
+    "nombre": "La Posta, Pizzella Malbec",
+    "añada": "2017",
+    "varietal": "100% Malbec",
+    "descripcion": "10% barricas nuevas francesas durante 10 meses y 30% en segundo uso. Color rojo con aromas de cerezas negras, frutas, chocolate negro y especias. En el paladar, el vino muestra sabores de ciruela, sándalo y especias, violetas en el final. Este es un vino de cuerpo entero y bien estructurado, nacido para ser disfrutado con la comida y amigos.",
+    "precio": "1320",
+    "imagen": "../assets/vinos/laPostaPizzellaTrans.png"
+  },
+  {
+    "id": "0007",
+    "nombre": "Pispi",
+    "añada": "2020",
+    "varietal": "40% Malbec, 20% Petit Verdot, 20% Bonarda, 10% Cabernet Franc, 10% Merlot",
+    "descripcion": "El 40% del vino fue criado durante 12 meses en barricas roble francés de segundo uso. Este blend de tintas representa la sinergia de los diferentes terroir y variedades. Aromas a mentolados, moras, ciruelas, grosellas, abariguay, pimiento rojo, pimientas y mermeladas. Notas tostadas, caramelo, vainilla. ",
+    "precio": "1580",
+    "imagen": "../assets/vinos/pispiTrans.png"
+  },
+  {
+    "id": "0008",
+    "nombre": "Ver Sacrum, Garnacha.",
+    "añada": "2016",
+    "varietal": "100% Garnacha Negra",
+    "descripcion": "100% Maceración carbónica, racimo entero durante dos semanas, luego del descube, se continuó la fermentación sin las pieles. Crianza: 50% en huevos sobre sus propias lias, 50% en barricas de roble francés de 500L. 6 meses en botella.",
+    "precio": "1230",
+    "imagen": "../assets/vinos/verSacrumGarnacha.png"
+  },
+  {
+    "id": "0009",
+    "nombre": "Ver Sacrum, G.S.M",
+    "añada": "2016",
+    "varietal": "50% Garnacha Negra, 25% Syrah, 25% Monasterell",
+    "descripcion": "Maceración carbónica, con racimo entero para la Garnacha y despalillado para Monasterell, por dos semanas. Syrah macerado en barrica abierta de 500L. de roble francés. Crianza: mezclado y luego añejado en barricas de cuarto uso de roble francés, por 8 meses. 12 meses en botella.",
+    "precio": "1230",
+    "imagen": "../assets/vinos/verSacrumGsm.png"
+  },
+  {
+    "id": "0010",
+    "nombre": "Ver Sacrum, Monasterell",
+    "añada": "2016",
+    "varietal": "100% Monasterell",
+    "descripcion": "Maceración 100% carbónica. Crianza: 100% en huevos de cemento sobre sus propias lias por seis meses. 12 meses en botella. Sin paso por roble.",
+    "precio": "1230",
+    "imagen": "../assets/vinos/verSacrumMonasterel.png"
+  },
+  {
+    "id": "0011",
+    "nombre": "Vinyes, Malbec Cot",
+    "añada": "2019",
+    "varietal": "100% Malbec",
+    "descripcion": "Elaborado a partir de una maceración carbónica estricta con racimos enteros de La Consulta, Valle de Uco. Un vino de expresión novedosa y potente con notas de frutos rojos profundos entre los que se destacan las cerezas, ciruelas y guindas con trazos florales y de golosinas.  ",
+    "precio": "1300",
+    "imagen": "../assets/vinos/vinyesCot.png"
+  },
+  {
+    "id": "0012",
+    "nombre": "Gran BiriBiri",
+    "añada": "2019",
+    "varietal": "Blend de Tintas",
+    "descripcion": "El 50% criado durante doce meses en barricas de roble francés de primer uso.",
+    "precio": "670",
+    "imagen": "../assets/vinos/biribiriReservaTrans.png"
+  },
+  {
+    "id": "0013",
+    "nombre": "Animal, Malbec Orgánico",
+    "añada": "2019",
+    "varietal": "100% Malbec",
+    "descripcion": "Color casi negro, con destellos violáceos, muy intenso. Notas de frutas negras y mermelada de ciruela. Ataque dulce, delicado y carnoso, con taninos amables que invitan a seguir tomando, mucha fruta presente en boca con una madera bien amalgamada, donde se reflejan las notas de vainilla y chocolate.",
+    "precio": "900",
+    "imagen": "../assets/vinos/animalTrans.png"
+  },
+  {
+    "id": "",
+    "nombre": "",
+    "añada": "",
+    "varietal": "",
+    "descripcion": "",
     "precio": "",
     "imagen": ""
   },
   {
+    "id": "",
     "nombre": "",
-    "descripción": "",
+    "añada": "",
+    "varietal": "",
+    "descripcion": "",
     "precio": "",
     "imagen": ""
   },
   {
+    "id": "",
     "nombre": "",
-    "descripción": "",
+    "añada": "",
+    "varietal": "",
+    "descripcion": "",
     "precio": "",
     "imagen": ""
   },
   {
+    "id": "",
     "nombre": "",
-    "descripción": "",
+    "añada": "",
+    "varietal": "",
+    "descripcion": "",
     "precio": "",
     "imagen": ""
   },
   {
+    "id": "",
     "nombre": "",
-    "descripción": "",
+    "añada": "",
+    "varietal": "",
+    "descripcion": "",
+    "precio": "",
+    "imagen": ""
+  },
+  {
+    "id": "",
+    "nombre": "",
+    "añada": "",
+    "varietal": "",
+    "descripcion": "",
+    "precio": "",
+    "imagen": ""
+  },
+  {
+    "id": "",
+    "nombre": "",
+    "añada": "",
+    "varietal": "",
+    "descripcion": "",
+    "precio": "",
+    "imagen": ""
+  },
+  {
+    "id": "",
+    "nombre": "",
+    "añada": "",
+    "varietal": "",
+    "descripcion": "",
+    "precio": "",
+    "imagen": ""
+  },
+  {
+    "id": "",
+    "nombre": "",
+    "añada": "",
+    "varietal": "",
+    "descripcion": "",
+    "precio": "",
+    "imagen": ""
+  },
+  {
+    "id": "",
+    "nombre": "",
+    "añada": "",
+    "varietal": "",
+    "descripcion": "",
+    "precio": "",
+    "imagen": ""
+  },
+  {
+    "id": "",
+    "nombre": "",
+    "añada": "",
+    "varietal": "",
+    "descripcion": "",
+    "precio": "",
+    "imagen": ""
+  },
+  {
+    "id": "",
+    "nombre": "",
+    "añada": "",
+    "varietal": "",
+    "descripcion": "",
+    "precio": "",
+    "imagen": ""
+  },
+  {
+    "id": "",
+    "nombre": "",
+    "añada": "",
+    "varietal": "",
+    "descripcion": "",
     "precio": "",
     "imagen": ""
   }

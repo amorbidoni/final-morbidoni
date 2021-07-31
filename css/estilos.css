@@ -60,7 +60,9 @@
 }
 
 .eventos {
+  margin: 40px 0;
   width: 100%;
+  cursor: pointer;
 }
 .eventos img {
   width: 100%;
@@ -68,7 +70,25 @@
 .eventos div {
   margin: 0 2px;
 }
+.eventos p {
+  text-align: center;
+  font-size: 0.5rem;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  display: block;
+  left: 22%;
+  color: black;
+  margin: 10px;
+}
 
+@keyframes textIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 .container__combos {
   flex-wrap: wrap;
   justify-content: center;
@@ -90,6 +110,10 @@
   .productos-pack img {
     width: 300px;
   }
+
+  .eventos p {
+    font-size: 1rem;
+  }
 }
 @media all and (min-width: 1100px) {
   .display-tab {
@@ -98,6 +122,91 @@
 
   .productos-pack img {
     width: 300px;
+  }
+
+  .eventos {
+    margin: 40px 0;
+    width: 100%;
+    cursor: pointer;
+  }
+  .eventos img {
+    width: 100%;
+  }
+  .eventos div {
+    margin: 0 2px;
+    height: 340px;
+  }
+  .eventos p {
+    width: 204px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    display: none;
+    position: absolute;
+    left: 22%;
+    color: black;
+    margin: 0;
+  }
+  .eventos .eventos-uno {
+    transition: 2s;
+    position: relative;
+  }
+  .eventos .eventos-uno:hover {
+    transform: translateY(-30px);
+  }
+  .eventos .eventos-uno:hover p {
+    display: block;
+    bottom: 5px;
+    animation-name: textIn;
+    animation-duration: 3s;
+  }
+  .eventos .eventos-dos {
+    transition: 2s;
+    position: relative;
+  }
+  .eventos .eventos-dos:hover {
+    transform: translateY(30px);
+  }
+  .eventos .eventos-dos:hover p {
+    display: block;
+    top: -36px;
+    animation-name: textIn;
+    animation-duration: 3s;
+  }
+  .eventos .eventos-tres {
+    transition: 2s;
+    position: relative;
+  }
+  .eventos .eventos-tres:hover {
+    transform: translateY(-30px);
+  }
+  .eventos .eventos-tres:hover p {
+    display: block;
+    bottom: 5px;
+    animation-name: textIn;
+    animation-duration: 3s;
+  }
+
+  @keyframes textIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+  .container__combos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+
+  .align-center {
+    align-items: center;
   }
 }
 .miCol-1 {
@@ -264,8 +373,17 @@ header h2 {
 }
 
 .productos {
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap !important;
   justify-content: space-around;
+  align-items: flex-start !important;
+}
+
+.container-main-vinos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .producto__box {
@@ -496,6 +614,9 @@ header h2 {
   font-size: 1.5rem;
 }
 
+.container__select--vinos-mb {
+  display: none;
+}
 .container__select--vinos-mb select {
   background-color: white;
   border: 1px solid black;
@@ -503,34 +624,6 @@ header h2 {
   font-family: "Playfair Display", serif;
   box-shadow: 2px 2px 5px #666;
   cursor: pointer;
-}
-
-.container__modal--carrito {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  left: 38%;
-  top: 50%;
-  width: 320px;
-  height: 100px;
-  background-color: black;
-  border-radius: 5px;
-  animation-delay: 2s;
-  animation-duration: 1s;
-  box-shadow: 2px 2px 5px #666;
-}
-.container__modal--carrito svg {
-  width: 20px;
-  fill: white;
-  animation: heartBeat;
-  animation-duration: 2s;
-}
-.container__modal--carrito p {
-  font-family: "Playfair Display", serif;
-  color: white;
-  margin: 0 10px;
 }
 
 @keyframes bigoteAnimacion {
@@ -568,6 +661,10 @@ header h2 {
   }
 }
 @media all and (max-width: 375px) {
+  .container__select--vinos-mb {
+    display: block;
+  }
+
   .aside-vinos {
     display: none;
   }
@@ -592,6 +689,24 @@ header h2 {
 
   .productos {
     width: 361px;
+  }
+}
+@media all and (min-width: 376px) and (max-width: 896px) {
+  .container__select--vinos-mb {
+    display: block;
+  }
+
+  .aside-vinos {
+    display: none;
+  }
+
+  .main-vinos {
+    border: none !important;
+    margin: 0 auto;
+  }
+
+  .container__cayado--animado img {
+    display: none;
   }
 }
 .miCol-1 {
@@ -665,6 +780,13 @@ header h2 {
 .btn-grande p {
   transition: 0.5s;
 }
+.btn-grande::-moz-focus-inner {
+  border: 0;
+}
+.btn-grande:focus {
+  border: none;
+  outline: none;
+}
 .btn-grande p {
   padding: 7px;
   text-transform: uppercase;
@@ -692,6 +814,13 @@ header h2 {
 }
 .btn-chico p {
   transition: 0.5s;
+}
+.btn-chico::-moz-focus-inner {
+  border: 0;
+}
+.btn-chico:focus {
+  border: none;
+  outline: none;
 }
 
 .miCol-1 {
@@ -1261,8 +1390,9 @@ footer div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px;
-  height: 100%;
+  margin: 40px;
+  height: 216px;
+  width: 270px;
 }
 .myModal .comprar__container input {
   width: 50px;
@@ -1294,6 +1424,143 @@ footer div {
   z-index: 5;
 }
 
+.container__modal--carrito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 38%;
+  top: 50%;
+  width: 320px;
+  height: 100px;
+  background-color: black;
+  border-radius: 5px;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  box-shadow: 2px 2px 5px #666;
+}
+.container__modal--carrito svg {
+  width: 20px;
+  fill: white;
+  animation: heartBeat;
+  animation-duration: 2s;
+}
+.container__modal--carrito p {
+  font-family: "Playfair Display", serif;
+  color: white;
+  margin: 0 10px;
+}
+
+.close--modal::-moz-focus-inner {
+  border: 0;
+}
+.close--modal:focus {
+  border: none;
+  outline: none;
+}
+
+@media all and (max-width: 375px) {
+  .myModal h2 {
+    font-size: 1rem;
+  }
+  .myModal img {
+    width: 50px !important;
+  }
+  .myModal .container__data {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .myModal .container__data .comprar__container {
+    margin: 5px !important;
+    height: 216px;
+    width: 160px;
+  }
+  .myModal .container__data label {
+    font-size: 0.8rem;
+  }
+  .myModal .container__data input {
+    font-size: 0.8rem;
+  }
+  .myModal .container__data p {
+    font-size: 0.8rem;
+  }
+  .myModal tbody td {
+    font-size: 0.5rem;
+    max-width: 90px;
+  }
+  .myModal tbody td.table--data {
+    width: 40px !important;
+  }
+
+  .container__modal--carrito {
+    left: 6vw;
+    top: 50%;
+  }
+}
+@media all and (min-width: 376px) and (max-width: 659px) {
+  .myModal h2 {
+    font-size: 1rem;
+  }
+  .myModal img {
+    width: 60px !important;
+  }
+
+  .titulo-vino h2 {
+    font-size: 1rem !important;
+  }
+
+  .container__data {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .container__data .comprar__container {
+    margin: 5px !important;
+    height: 216px;
+    width: 160px;
+  }
+  .container__data p {
+    font-size: 0.8rem;
+  }
+  .container__data tbody td {
+    font-size: 0.5rem;
+    max-width: 90px;
+  }
+  .container__data tbody td.table--data {
+    width: 40px !important;
+  }
+
+  .container__modal--carrito {
+    left: 22%;
+    top: 50%;
+  }
+}
+@media all and (min-width: 660px) and (max-width: 1024px) {
+  .myModal img {
+    width: 60px !important;
+  }
+
+  .titulo-vino h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .container__data p {
+    font-size: 0.8rem;
+  }
+  .container__data tbody td {
+    font-size: 0.5rem;
+    max-width: 90px;
+  }
+  .container__data tbody td.table--data {
+    width: 40px !important;
+  }
+}
 * {
   margin: 0;
   padding: 0;

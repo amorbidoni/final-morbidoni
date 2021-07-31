@@ -25,6 +25,13 @@
   p {
     transition: 0.5s;
   }
+  &::-moz-focus-inner {
+    border: 0;
+  }
+  &:focus {
+    border: none;
+    outline: none;
+  }
 }
 
 .btn-grande {

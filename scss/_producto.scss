@@ -1,6 +1,14 @@
 .productos {
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap !important;
   justify-content: space-around;
+  align-items: flex-start !important;
+}
+.container-main-vinos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .producto__box {
   align-items: center;
@@ -237,6 +245,7 @@
   }
 }
 .container__select--vinos-mb {
+  display: none;
   select {
     background-color: white;
     border: 1px solid black;
@@ -244,33 +253,6 @@
     font-family: $fuente;
     box-shadow: 2px 2px 5px #666;
     cursor: pointer;
-  }
-}
-.container__modal--carrito {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  left: 38%;
-  top: 50%;
-  width: 320px;
-  height: 100px;
-  background-color: rgb(0, 0, 0);
-  border-radius: 5px;
-  animation-delay: 2s;
-  animation-duration: 1s;
-  box-shadow: 2px 2px 5px #666;
-  svg {
-    width: 20px;
-    fill: white;
-    animation: heartBeat;
-    animation-duration: 2s;
-  }
-  p {
-    font-family: $fuente;
-    color: white;
-    margin: 0 10px;
   }
 }
 
@@ -309,6 +291,9 @@
   }
 }
 @media all and (max-width: 375px) {
+  .container__select--vinos-mb {
+    display: block;
+  }
   .aside-vinos {
     display: none;
   }
@@ -331,5 +316,22 @@
   }
   .productos {
     width: 361px;
+  }
+}
+@media all and (min-width: 376px) and (max-width: 896px) {
+  .container__select--vinos-mb {
+    display: block;
+  }
+  .aside-vinos {
+    display: none;
+  }
+  .main-vinos {
+    border: none !important;
+    margin: 0 auto;
+  }
+  .container__cayado--animado {
+    img {
+      display: none;
+    }
   }
 }

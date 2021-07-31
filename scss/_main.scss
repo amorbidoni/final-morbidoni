@@ -12,12 +12,32 @@
 }
 
 .eventos {
+  margin: 40px 0;
   width: 100%;
+  cursor: pointer;
   img {
     width: 100%;
   }
   div {
     margin: 0 2px;
+  }
+  p {
+    text-align: center;
+    font-size: 0.5rem;
+    font-weight: 700;
+    font-family: $fuente;
+    display: block;
+    left: 22%;
+    color: black;
+    margin: 10px;
+  }
+}
+@keyframes textIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
   }
 }
 .container__combos {
@@ -38,6 +58,11 @@
   .productos-pack img {
     width: $img-w-xl;
   }
+  .eventos {
+    p {
+      font-size: 1rem;
+    }
+  }
 }
 
 @media all and (min-width: 1100px) {
@@ -46,5 +71,86 @@
   }
   .productos-pack img {
     width: $img-w-xl;
+  }
+  .eventos {
+    margin: 40px 0;
+    width: 100%;
+    cursor: pointer;
+    img {
+      width: 100%;
+    }
+    div {
+      margin: 0 2px;
+      height: 340px;
+    }
+    p {
+      width: 204px;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-family: $fuente;
+      display: none;
+      position: absolute;
+      left: 22%;
+      color: black;
+      margin: 0;
+    }
+    .eventos-uno {
+      transition: 2s;
+      position: relative;
+      &:hover {
+        transform: translateY(-30px);
+        p {
+          display: block;
+          bottom: 5px;
+          animation-name: textIn;
+          animation-duration: 3s;
+        }
+      }
+    }
+    .eventos-dos {
+      transition: 2s;
+      position: relative;
+      &:hover {
+        transform: translateY(30px);
+        p {
+          display: block;
+          top: -36px;
+          animation-name: textIn;
+          animation-duration: 3s;
+        }
+      }
+    }
+    .eventos-tres {
+      transition: 2s;
+      position: relative;
+      &:hover {
+        transform: translateY(-30px);
+        p {
+          display: block;
+          bottom: 5px;
+          animation-name: textIn;
+          animation-duration: 3s;
+        }
+      }
+    }
+  }
+  @keyframes textIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+  .container__combos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .align-center {
+    align-items: center;
   }
 }
