@@ -117,112 +117,130 @@
     "imagen": "../assets/vinos/animalTrans.png"
   },
   {
-    "id": "",
-    "nombre": "",
-    "añada": "",
-    "varietal": "",
-    "descripcion": "",
-    "precio": "",
-    "imagen": ""
+    "id": "0014",
+    "nombre": "Paso a Paso, Clarete",
+    "añada": "2020",
+    "varietal": "Criolla Grande 50%, Moscatel Rosado 25%, Pedro Giménez 15%, Torrontés Sanjuanino 10%",
+    "descripcion": "El clarete es la opción para los que prefieren vinos un poco más austeros en aromas. Si bien es un vino frutado, no se siente tan fuerte la presencia del moscatel y del torrontes como en el rosado. Eso está dado por la extracción de sabores que tuvo de las pieles, de la criolla grande, y un poco de bonarda también.",
+    "precio": "630",
+    "imagen": "../assets/vinos/pasoAPasoClarete.png"
   },
   {
-    "id": "",
-    "nombre": "",
-    "añada": "",
-    "varietal": "",
-    "descripcion": "",
-    "precio": "",
-    "imagen": ""
+    "id": "0015",
+    "nombre": "Paso a Paso, Rose",
+    "añada": "2020",
+    "varietal": "Criolla Grande 50% Moscatel Rosado 25% Torrontes Sanjuanino 12% Pedro Gimenez 13%",
+    "descripcion": "Paso a Paso Wines realiza vinos microvinificados elaborados con un concepto auténticamente artesanal con cuidado minucioso y seguimiento personal de sus propios enólogos. Son botellas numeradas de cada partida. Cada botella es el resultado de la conjunción del arte, sutileza, adrenalina, y contemplación, entendiendo que todo es parte de un proceso y que para llegar a obtener algo único con personalidad, lo importante es avanzar “paso a paso”",
+    "precio": "630",
+    "imagen": "../assets/vinos/pasoAPasoRose.png"
   },
   {
-    "id": "",
-    "nombre": "",
-    "añada": "",
-    "varietal": "",
-    "descripcion": "",
-    "precio": "",
-    "imagen": ""
+    "id": "0016",
+    "nombre": "Padrillos Trifecta",
+    "añada": "2020",
+    "varietal": "100% Sauvignon Blanc",
+    "descripcion": "Este Padrillos presenta una delicadeza y profundidad  que cuando se lo sirve a la temperatura justa, ofrece un vino muy elegante. Pero vale la pena guardar algo, porque a la media hora del primer sorbo, cuando ya se pierde el frío, aparecen nuevos aromas, entre ellos los más característicos del varietal.",
+    "precio": "620",
+    "imagen": "../assets/vinos/padrillosTrifecta.png"
   },
   {
-    "id": "",
-    "nombre": "",
-    "añada": "",
-    "varietal": "",
-    "descripcion": "",
-    "precio": "",
-    "imagen": ""
+    "id": "0017",
+    "nombre": "ZunZun, Rosado",
+    "añada": "2020",
+    "varietal": "100% Cabenet Franc",
+    "descripcion": "Color salmón pálido, en nariz encontramos aromas de pimiento rojo típico del Cabernet Franc, notas cítricas de cáscara de naranja, y al final un mentolado leve. En boca sentimos la naranja y el damasco, mineralidad y rendondez, con acidez equilibrada y un retrogusto floral.",
+    "precio": "560",
+    "imagen": "../assets/vinos/zunzunRosado.png"
   },
   {
-    "id": "",
-    "nombre": "",
-    "añada": "",
-    "varietal": "",
-    "descripcion": "",
-    "precio": "",
-    "imagen": ""
+    "id": "0018",
+    "nombre": "Las Perdices, Fumé Blanc",
+    "añada": "2019",
+    "varietal": "100% Sauvignon Blanc",
+    "descripcion": "Color amarillo verdoso muy sutil, intensos aromas de fruto de la pasión, mango, pomelo rosado, con sutiles notas minerales. En boca, buen ataque, acidez bien balanceada, con final prolongado, remarcando las notas de frutos tropicales. Ideal como aperitivo o para acompañar frutos de mar, pescados y ensaladas.",
+    "precio": "880",
+    "imagen": "../assets/vinos/lasPerdicesFumeBlanc.png"
   },
   {
-    "id": "",
-    "nombre": "",
-    "añada": "",
-    "varietal": "",
-    "descripcion": "",
-    "precio": "",
-    "imagen": ""
+    "id": "0019",
+    "nombre": "ZunZun, Naranjo",
+    "añada": "2020",
+    "varietal": "100% Sauvignon Blanc",
+    "descripcion": "Se trabaja con levaduras indígenas, su particularidad es que se elabora  con piel como un vino tinto buscando extraer taninos que luego ayudarán en el posterior añejado. Su  crianza es de 3 meses en contacto con piel en huevo de cemento. De color sutil amarillo ámbar brillante, en nariz encontramos notas de hierbas, frutos secos recordando a la almendra y panificados. En boca se presenta untuoso, con acidez equilibrada, fresca y envolvente.",
+    "precio": "560",
+    "imagen": "../assets/vinos/zunzunNaranjo.png"
   },
   {
-    "id": "",
-    "nombre": "",
-    "añada": "",
-    "varietal": "",
-    "descripcion": "",
-    "precio": "",
-    "imagen": ""
+    "id": "0020",
+    "nombre": "Hey Rose",
+    "añada": "2019",
+    "varietal": "100% Malbec",
+    "descripcion": "De hermoso color rosado salmón. En nariz presenta aromas a flores blancas y cítricos. Un vino fresco y elegante, perfecto para un atardecer de verano. Temperatura de servicio para este vino es entre 8º y 10º C, Potencial de guarda 2 años.",
+    "precio": "880",
+    "imagen": "../assets/vinos/heyRose.png"
   },
   {
-    "id": "",
-    "nombre": "",
-    "añada": "",
-    "varietal": "",
-    "descripcion": "",
-    "precio": "",
-    "imagen": ""
+    "id": "0021",
+    "nombre": "Bendito pecado, Malbec",
+    "añada": "2020",
+    "varietal": "100% Malbec",
+    "descripcion": "Intenso color rojo púrpura. En nariz se distingue madera, tabaco y chocolate. En boca es un vino con buen cuerpo, con taninos agradables y con muy buena caudalidad. Es un vino joven y frutado con una acidez bien balanceada.",
+    "precio": "680",
+    "imagen": "../assets/vinos/benditoPecadoMalbec.png"
   },
   {
-    "id": "",
-    "nombre": "",
-    "añada": "",
-    "varietal": "",
-    "descripcion": "",
-    "precio": "",
-    "imagen": ""
+    "id": "0022",
+    "nombre": "Bendito pecado, Cabernet Sauvignon",
+    "añada": "2020",
+    "varietal": "100% Cabernet Sauvignon",
+    "descripcion": "Es un vino de color rojo intenso, con tonalidades naranjas. En nariz denota el olor a pimiento, característico de este varietal y algunas notas de frutas maduras. En boca es intenso, estructurado y aterciopelado. Fácil de beber por su buen equilibrio de acidez.",
+    "precio": "680",
+    "imagen": "../assets/vinos/benditoPecadoCF.png"
   },
   {
-    "id": "",
-    "nombre": "",
-    "añada": "",
-    "varietal": "",
-    "descripcion": "",
-    "precio": "",
-    "imagen": ""
+    "id": "0023",
+    "nombre": "Las Perdices, Cabernet Sauvignon",
+    "añada": "2020",
+    "varietal": "100% Cabernet Sauvignon",
+    "descripcion": "Color rojo rubí profundo. Aromas de cerezas, notas de pimienta; vainilla y café aportados por la crianza en roble. Buen volumen en boca, balanceado, sabores que recuerdan a pimientos rojos, especias y un final de cacao o chocolate y café. Ideal para acompañar carnes rojas o platos con salsas especiadas.",
+    "precio": "630",
+    "imagen": "../assets/vinos/lasPerdicesCS.png"
   },
   {
-    "id": "",
-    "nombre": "",
-    "añada": "",
-    "varietal": "",
-    "descripcion": "",
-    "precio": "",
-    "imagen": ""
+    "id": "0024",
+    "nombre": "Antigal uno, Cabernet Sauvignon",
+    "añada": "2019",
+    "varietal": "100% Cabernet Sauvignon",
+    "descripcion": "Color rojo rubí, intenso y brillante. En nariz presenta notas a pimienta blanca, canela, frutos negros, excelente expresión varietal, notas a vainilla, coco, dulce de leche, buen equilibrio con la madera. En boca, taninos prominentes, redondo persistente y buen balance acidez.",
+    "precio": "970",
+    "imagen": "../assets/vinos/antigalUnoCS.png"
   },
   {
-    "id": "",
-    "nombre": "",
-    "añada": "",
-    "varietal": "",
-    "descripcion": "",
-    "precio": "",
-    "imagen": ""
+    "id": "0025",
+    "nombre": "Sombrero, Cabernet Franc",
+    "añada": "2020",
+    "varietal": "100% Cabernet Franc",
+    "descripcion": "Color rubí rojo intenso y vibrante. Excelente expresión y buena tipicidad varietal. Fina nariz especiada de pimienta negra y clavo. Notas de fruta y licor de cassis.",
+    "precio": "760",
+    "imagen": "../assets/vinos/sombreroCF.png"
+  },
+  {
+    "id": "0026",
+    "nombre": "Relator, Cabernet Franc",
+    "añada": "2020",
+    "varietal": "100% Cabernet Franc",
+    "descripcion": "Elaboración: 85 % del proceso se realiza en tanques de acero inoxidable y el 15 % restante en barricas de segundo uso (francesas). 3 meses en barricas de roble francés de segundo uso.",
+    "precio": "660",
+    "imagen": "../assets/vinos/relatorCF.png"
+  },
+  {
+    "id": "0027",
+    "nombre": "Andillian, Cabernet Franc",
+    "añada": "2018",
+    "varietal": "100% Cabernet Franc",
+    "descripcion": "Viñedos Ubicados en Alto Agrelo, Luján de Cuyo, Mendoza. Vinificación, raleo y selección de racimos en finca luego de elegir las mejores hileras del viñedo. Cosecha manual en cajas de 15 kg. Maceración carbónica pre fermentativa durante 5 días. Fermentación durante12 días de trabajos suaves de pisoneo y remontajes.",
+    "precio": "790",
+    "imagen": "../assets/vinos/andillianCF.png"
   },
   {
     "id": "",

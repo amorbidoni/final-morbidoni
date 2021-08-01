@@ -383,7 +383,8 @@ header h2 {
 .container-main-vinos {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left !important;
+  align-items: flex-start !important;
 }
 
 .producto__box {
@@ -690,6 +691,63 @@ header h2 {
   .productos {
     width: 361px;
   }
+
+  .container__banner--destilados .img-manhattan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container__banner--destilados .img-manhattan img {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    animation-name: backInLeft;
+    animation-duration: 2s;
+  }
+  .container__banner--destilados .img-manhattan p {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    font-size: 0.8rem;
+  }
+  .container__banner--destilados .img-negroni {
+    position: relative;
+  }
+  .container__banner--destilados .img-negroni img {
+    width: 100px;
+    height: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    animation-name: backInLeft;
+    animation-duration: 2s;
+  }
+  .container__banner--destilados .img-negroni p {
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+    font-size: 0.8rem;
+  }
+
+  .container__receta {
+    align-items: flex-start;
+    margin-top: 10px;
+    font-size: 0.5rem;
+  }
+  .container__receta .ul-uno {
+    margin: 0 5px;
+    animation: bounceInDown;
+    animation-duration: 2s;
+  }
+  .container__receta .ul-dos {
+    margin: 0 5px;
+    padding-bottom: 20px;
+    animation: bounceInDown;
+    animation-duration: 2s;
+  }
+  .container__receta .ul-dos li {
+    width: auto !important;
+  }
 }
 @media all and (min-width: 376px) and (max-width: 896px) {
   .container__select--vinos-mb {
@@ -707,6 +765,123 @@ header h2 {
 
   .container__cayado--animado img {
     display: none;
+  }
+
+  .container__banner--destilados .img-manhattan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container__banner--destilados .img-manhattan img {
+    width: 130px;
+    height: 130px;
+    margin-left: 30px;
+    margin-right: 30px;
+    animation-name: backInLeft;
+    animation-duration: 2s;
+  }
+  .container__banner--destilados .img-manhattan p {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    font-size: 0.8rem;
+  }
+  .container__banner--destilados .img-negroni {
+    position: relative;
+  }
+  .container__banner--destilados .img-negroni img {
+    width: 130px;
+    height: 170px;
+    margin-left: 20px;
+    margin-right: 20px;
+    animation-name: backInLeft;
+    animation-duration: 2s;
+  }
+  .container__banner--destilados .img-negroni p {
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+    font-size: 0.8rem;
+  }
+
+  .container__receta {
+    align-items: flex-start;
+    margin-top: 10px;
+    font-size: 0.8rem;
+  }
+  .container__receta .ul-uno {
+    margin: 0 5px;
+    animation: bounceInDown;
+    animation-duration: 2s;
+  }
+  .container__receta .ul-dos {
+    margin: 0 5px;
+    padding-bottom: 20px;
+    animation: bounceInDown;
+    animation-duration: 2s;
+  }
+  .container__receta .ul-dos li {
+    width: auto !important;
+    max-width: 300px;
+  }
+}
+@media all and (min-width: 897px) and (max-width: 1200px) {
+  .container__banner--destilados .img-manhattan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container__banner--destilados .img-manhattan img {
+    width: 180px;
+    height: 180px;
+    margin-left: 100px;
+    margin-right: 30px;
+    animation-name: backInLeft;
+    animation-duration: 2s;
+  }
+  .container__banner--destilados .img-manhattan p {
+    position: absolute;
+    left: 140px;
+    bottom: 30px;
+    font-size: 1rem;
+  }
+  .container__banner--destilados .img-negroni {
+    position: relative;
+  }
+  .container__banner--destilados .img-negroni img {
+    width: 170px;
+    height: 230px;
+    margin-left: 100px;
+    margin-right: 20px;
+    animation-name: backInLeft;
+    animation-duration: 2s;
+  }
+  .container__banner--destilados .img-negroni p {
+    position: absolute;
+    left: 145px;
+    bottom: 20px;
+    font-size: 1rem;
+  }
+
+  .container__receta {
+    align-items: flex-start;
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  .container__receta .ul-uno {
+    margin: 0 5px;
+    animation: bounceInDown;
+    animation-duration: 2s;
+  }
+  .container__receta .ul-dos {
+    margin: 0 5px;
+    padding-bottom: 20px;
+    animation: bounceInDown;
+    animation-duration: 2s;
+  }
+  .container__receta .ul-dos li {
+    width: auto !important;
+    max-width: 400px;
   }
 }
 .miCol-1 {
@@ -907,12 +1082,20 @@ header h2 {
 }
 
 .suscriptores__container {
-  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 360px;
+}
+.suscriptores__container .titulo {
+  max-width: 360px;
+  align-self: center !important;
 }
 .suscriptores__container .form__container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 360px;
 }
 .suscriptores__container .form__container form {
   display: flex;
@@ -929,6 +1112,7 @@ header h2 {
   margin: 10px;
 }
 .suscriptores__container .form__container .form__item label {
+  width: 300px;
   padding-left: 10px;
 }
 .suscriptores__container .form__container .form__item input {
@@ -950,6 +1134,10 @@ header h2 {
   box-shadow: 2px 2px 10px #c9c9c9;
 }
 
+textarea {
+  resize: none !important;
+}
+
 .btn__container--enviar {
   display: flex;
   flex-direction: row;
@@ -958,8 +1146,19 @@ header h2 {
 }
 
 .publicidad__container {
-  width: 50%;
-  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+}
+.publicidad__container div {
+  width: 100%;
+}
+.publicidad__container div iframe {
+  width: 300px;
+  height: 80%;
+  margin: 20px;
 }
 .publicidad__container img {
   width: 300px !important;
@@ -1033,7 +1232,31 @@ header h2 {
   width: 0;
 }
 
-@media all and (min-width: 768px) {
+.contacto {
+  display: flex;
+  flex-direction: column;
+}
+.contacto textarea {
+  width: 300px;
+}
+.contacto form {
+  margin: 0 10%;
+}
+.contacto iframe {
+  margin: 10px 10%;
+}
+
+@media all and (min-width: 360px) and (max-width: 696px) {
+  .suscriptores__container {
+    flex-direction: row !important;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .suscriptores__container .titulo {
+    max-width: 100% !important;
+  }
+}
+@media all and (min-width: 696px) {
   .suscriptores {
     height: 150px;
     align-items: flex-start !important;
@@ -1044,10 +1267,53 @@ header h2 {
   .suscriptores a {
     padding: 0 !important;
   }
+
+  .suscriptores__container {
+    flex-direction: row !important;
+    align-items: flex-start;
+  }
+  .suscriptores__container .titulo {
+    max-width: 100% !important;
+  }
+  .suscriptores__container .publicidad__container {
+    align-items: center;
+  }
+  .suscriptores__container .publicidad__container div {
+    margin-left: 20%;
+  }
+  .suscriptores__container .publicidad__container iframe {
+    width: 40vw;
+    height: 20vw;
+  }
+
+  .form__container {
+    margin-left: 10%;
+    width: 450px !important;
+  }
+  .form__container .datos_container {
+    display: flex;
+    flex-direction: row;
+  }
+  .form__container .form__item {
+    width: 210px;
+  }
+
+  .contacto {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 @media all and (min-width: 1200px) {
   .suscriptores {
     height: 200px !important;
+  }
+
+  .suscriptores__container {
+    flex-direction: row !important;
+    align-items: flex-start;
+  }
+  .suscriptores__container .titulo {
+    max-width: 100% !important;
   }
 }
 .miCol-1 {

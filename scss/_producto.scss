@@ -8,7 +8,8 @@
 .container-main-vinos {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left !important;
+  align-items: flex-start !important;
 }
 .producto__box {
   align-items: center;
@@ -317,6 +318,64 @@
   .productos {
     width: 361px;
   }
+  .container__banner--destilados {
+    .img-manhattan {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      img {
+        width: 100px;
+        height: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+        animation-name: backInLeft;
+        animation-duration: 2s;
+      }
+      p {
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        font-size: 0.8rem;
+      }
+    }
+    .img-negroni {
+      position: relative;
+      img {
+        width: 100px;
+        height: 150px;
+        margin-left: 10px;
+        margin-right: 10px;
+        animation-name: backInLeft;
+        animation-duration: 2s;
+      }
+      p {
+        position: absolute;
+        left: 30px;
+        bottom: 50px;
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .container__receta {
+    align-items: flex-start;
+    margin-top: 10px;
+    font-size: 0.5rem;
+    .ul-uno {
+      margin: 0 5px;
+      animation: bounceInDown;
+      animation-duration: 2s;
+    }
+    .ul-dos {
+      margin: 0 5px;
+      padding-bottom: 20px;
+      animation: bounceInDown;
+      animation-duration: 2s;
+
+      li {
+        width: auto !important;
+      }
+    }
+  }
 }
 @media all and (min-width: 376px) and (max-width: 896px) {
   .container__select--vinos-mb {
@@ -332,6 +391,126 @@
   .container__cayado--animado {
     img {
       display: none;
+    }
+  }
+  .container__banner--destilados {
+    .img-manhattan {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      img {
+        width: 130px;
+        height: 130px;
+        margin-left: 30px;
+        margin-right: 30px;
+        animation-name: backInLeft;
+        animation-duration: 2s;
+      }
+      p {
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        font-size: 0.8rem;
+      }
+    }
+    .img-negroni {
+      position: relative;
+      img {
+        width: 130px;
+        height: 170px;
+        margin-left: 20px;
+        margin-right: 20px;
+        animation-name: backInLeft;
+        animation-duration: 2s;
+      }
+      p {
+        position: absolute;
+        left: 30px;
+        bottom: 50px;
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .container__receta {
+    align-items: flex-start;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    .ul-uno {
+      margin: 0 5px;
+      animation: bounceInDown;
+      animation-duration: 2s;
+    }
+    .ul-dos {
+      margin: 0 5px;
+      padding-bottom: 20px;
+      animation: bounceInDown;
+      animation-duration: 2s;
+
+      li {
+        width: auto !important;
+        max-width: 300px;
+      }
+    }
+  }
+}
+@media all and (min-width: 897px) and (max-width: 1200px) {
+  .container__banner--destilados {
+    .img-manhattan {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      img {
+        width: 180px;
+        height: 180px;
+        margin-left: 100px;
+        margin-right: 30px;
+        animation-name: backInLeft;
+        animation-duration: 2s;
+      }
+      p {
+        position: absolute;
+        left: 140px;
+        bottom: 30px;
+        font-size: 1rem;
+      }
+    }
+    .img-negroni {
+      position: relative;
+      img {
+        width: 170px;
+        height: 230px;
+        margin-left: 100px;
+        margin-right: 20px;
+        animation-name: backInLeft;
+        animation-duration: 2s;
+      }
+      p {
+        position: absolute;
+        left: 145px;
+        bottom: 20px;
+        font-size: 1rem;
+      }
+    }
+  }
+  .container__receta {
+    align-items: flex-start;
+    margin-top: 10px;
+    font-size: 1rem;
+    .ul-uno {
+      margin: 0 5px;
+      animation: bounceInDown;
+      animation-duration: 2s;
+    }
+    .ul-dos {
+      margin: 0 5px;
+      padding-bottom: 20px;
+      animation: bounceInDown;
+      animation-duration: 2s;
+
+      li {
+        width: auto !important;
+        max-width: 400px;
+      }
     }
   }
 }
